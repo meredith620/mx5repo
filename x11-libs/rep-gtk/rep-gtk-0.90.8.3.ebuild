@@ -38,6 +38,12 @@ src_configure() {
 		--disable-static
 }
 
+src_compile() {
+	export LIBTOOL="${WORKDIR}/${MY_P}/libtool"
+        export rep_LIBTOOL="${WORKDIR}/${MY_P}/libtool"
+	default
+}
+
 src_install() {
 	default
 	use examples && dodoc -r examples
