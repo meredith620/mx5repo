@@ -10,6 +10,7 @@ COMMIT_ID=649a2147e4f41d266bafd9ed1e7188b115af2e62
 DESCRIPTION="Extensible window manager using a Lisp-based scripting language"
 HOMEPAGE="https://sawfish.fandom.com/wiki/Main_Page"
 # SRC_URI="http://download.tuxfamily.org/librep/${PN}/${MY_P}.tar.xz"
+# S="${WORKDIR}/${MY_P}"
 SRC_URI="https://github.com/SawfishWM/rep-gtk/archive/${COMMIT_ID}.tar.gz"
 S="${WORKDIR}/${PN}-${COMMIT_ID}"
 
@@ -29,7 +30,6 @@ DEPEND="${RDEPEND}
 	virtual/pkgconfig
 	app-arch/xz-utils"
 
-S="${WORKDIR}/${MY_P}"
 
 DOCS=( AUTHORS ChangeLog README README.gtk-defs README.guile-gtk TODO )
 

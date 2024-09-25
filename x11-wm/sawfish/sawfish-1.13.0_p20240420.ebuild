@@ -10,8 +10,8 @@ COMMIT_ID=ee69ea7f72c6caaa58adac7c88fce80322a99107
 DESCRIPTION="Extensible window manager using a Lisp-based scripting language"
 HOMEPAGE="https://sawfish.fandom.com/wiki/Main_Page"
 # SRC_URI="https://download.tuxfamily.org/sawfish/${MY_P}.tar.xz"
-SRC_URI="https://github.com/SawfishWM/sawfish/archive/${COMMIT_ID}.tar.gz"
 # S="${WORKDIR}"/${MY_P}
+SRC_URI="https://github.com/SawfishWM/sawfish/archive/${COMMIT_ID}.tar.gz"
 S="${WORKDIR}/${PN}-${COMMIT_ID}"
 
 LICENSE="GPL-2 Artistic-2"
